@@ -1,0 +1,89 @@
+﻿/* EVENT LIST */
+
+.eventlist 
+{
+    
+}
+.eventlist .event
+{
+    text-decoration:none;
+    color:Black;
+    display:block;
+    padding:8px;
+}
+.eventlist .event:hover 
+{
+    background-repeat:repeat-x;
+    background-color:White;
+    display:block;
+    background-image:url( 'Backgrounds/event_hover_orange.jpg' );
+    cursor:pointer;
+}
+.eventlist .separator 
+{
+    border-top:solid 1px #7B97AD;
+    height:0px;
+    overflow:hidden;
+    margin:0px;
+}
+
+
+/* EVENT TITLE AND DESCRIPTION */
+.eventlist .title
+{
+    color:#024478; 
+    display:block;
+    margin:0px 0px 7px 0px;
+    font-size:1.2em; 
+    font-weight:bold;
+}
+.eventlist .description 
+{
+    font-size:0.85em;
+    display:block;
+    margin-bottom: 6px;
+}
+/* end EVENT TITLE AND DESCRIPTION */
+
+
+/* INFOBAR layout */
+.eventlist .event .infobar
+{
+    clear:both;
+    height:1%;
+    padding:4px;
+    display:block;
+    background-color:#F7F7F7;
+    border:solid 1px #CCCCCC;
+    font-size:0.85em;
+}
+.eventlist .event .infobar .left { float:left; display:block; width:35%; }
+.eventlist .event .infobar .middle { float:left; display:block; width:auto; }
+.eventlist .event .infobar .right { display:block; width:auto; float:right; }
+/* end INFOBAR layout */
+
+
+/* EVENT SPECIFICS */
+.eventlist .event .date { display:block; font-weight:bold; }
+.eventlist .event .type { display:block; }
+.eventlist .event .facility { display:block; font-weight:bold; }
+.eventlist .event .location { display:block; }
+.eventlist .event .openings { font-size:1.6em; font-weight:bold; }
+.eventlist .event .full { color:Gray; }
+.eventlist .event .hurry { color:#B94747; }
+.eventlist .event .normal { color:#004276; }
+/* end EVENT SPECIFICS */
+
+
+/* DATA PAGERS */
+.datapager 
+{
+    padding:4px;
+    height:1%;
+    text-align:center;
+    border-top:solid 2px #7B97AD;
+    border-bottom:solid 2px #7B97AD;
+    /*margin-bottom:20px; */
+    background-color:#ECF1F5;
+}
+/* end DATA PAGERS */

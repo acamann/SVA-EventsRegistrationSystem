@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="SVA Events - Upcoming Events"  description="" roles="*" >
+    <siteMapNode url="~/Login/Default.aspx" title="SVA Events - Login"  description="" roles="*">
+      <siteMapNode url="~/Login/NewUser.aspx" title="SVA Events - Create a New Account" description="" roles="*" />
+      <siteMapNode url="~/Login/Profile.aspx" title="SVA Events - User Profile" description="" roles="*" />
+      <siteMapNode url="~/Login/Password.aspx" title="SVA Events - Reset Password" description="" roles="*" />
+      <siteMapNode url="~/Login/ChangePassword.aspx" title="SVA Events - Change Password" description="" roles="*" />
+    </siteMapNode>
+    <siteMapNode url="~/MyEvents/Default.aspx" title="SVA Events - My Events"  description="" roles="Admin,User" />
+    <siteMapNode url="~/Contact/Default.aspx" title="SVA Events - Contact Us"  description="" roles="*" />
+    <siteMapNode url="~/Help/Default.aspx" title="SVA Events - User Documentation" description="" roles="*" />
+    <siteMapNode url="~/Details/Default.aspx" title="SVA Events - Event Details" description="" roles="*" >
+      <siteMapNode url="~/Details/Facility.aspx" title="SVA Events - Facility Details" description="" roles="*" >
+        <siteMapNode url="~/Details/Attractions.aspx" title="SVA Events - Area Attractions" description="" roles="*" ></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Details/Agenda.aspx" title="SVA Events - Agenda Details" description="" roles="*" ></siteMapNode>
+      <siteMapNode url="~/Registration/Default.aspx" title="SVA Events - Event Registration" description="" roles="Admin,User" >
+        <siteMapNode url="~/Registration/WaitingList.aspx" title="SVA Events - Event Waiting List" description="" roles="Admin,User"></siteMapNode>
+        <siteMapNode url="~/Registration/Payment.aspx" title="SVA Events - Event Payment" description="" roles="Admin,User"></siteMapNode>
+        <siteMapNode url="~/Registration/Cancel.aspx" title="SVA Events - Cancel Event Registration" description="" roles="Admin,User"></siteMapNode>
+        <siteMapNode url="~/Registration/Receipt.aspx" title="SVA Events - Event Registration Receipt" description="" roles="Admin,User"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/ErrorPages/Default.aspx" title="SVA Events - Error" description="" roles="*" >
+      <siteMapNode url="~/ErrorPages/NotFound.aspx" title="SVA Events - Not Found" description="" roles="*"></siteMapNode>
+      <siteMapNode url="~/ErrorPages/Insufficient.aspx" title="SVA Events - Insufficient Access" description="" roles="*"></siteMapNode>
+    </siteMapNode>    
+  </siteMapNode>
+</siteMap>

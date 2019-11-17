@@ -1,0 +1,8 @@
+﻿<%@ Register assembly="RadGrid.Net2" namespace="Telerik.WebControls" tagprefix="radG" %>
+<%@ Register assembly="RadInput.Net2" namespace="Telerik.WebControls" tagprefix="radI" %>
+
+<radG:RadGrid runat="server" BorderStyle="None" BorderWidth="0px" Skin="Outlook2007">
+    <HeaderStyle Height="25px" />
+</radG:RadGrid>
+<radI:RadTextBox Runat="server" LabelCssClass="radLabelCss_Outlook" Skin="Office2007">
+</radI:RadTextBox>

@@ -1,0 +1,281 @@
+﻿/* GENERAL TAGS */
+
+html, body, form, #header, #wrapper #menu {
+	width: 100%;
+	margin: 0;
+}
+html, body, form, #leftcol, #wrapper {
+	height: 100%;
+}
+html   
+{
+    background-image: url( 'Backgrounds/RSVP_LeftCol_BG.jpg' ); 
+    background-repeat:repeat-y;
+     
+}
+body {
+	font-family: Verdana, Tahoma, Arial, sans-Serif;
+	background-image: url( 'Backgrounds/PageBackground.jpg' );
+	background-repeat: repeat-x;
+}
+li {
+	list-style-type: square;
+	font-size: .8em;
+}
+
+a:hover { text-decoration:none; }
+
+.center 
+{
+    margin:0 auto;
+    align:center;
+}
+
+/* LAYOUT DIVS */
+#wrapper {
+}
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 102;
+	background-image: url( 'Backgrounds/RSVP_Header_BG.jpg' );
+	background-repeat: repeat-y;
+	background-color: #004276;
+}
+#headerlogo {
+	width: 385px;
+	height: 78px;
+	background-repeat: no-repeat;
+	background-image: url(  'Images/RSVP_Header.jpg' );
+}
+#headerphoto
+{
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	z-index: 102;
+}
+#menu {
+	position: absolute;
+	left: 0;
+	top: 78px;
+	height: 22px;
+	background-image: url( 'Backgrounds/MenuBackground.jpg' );
+	background-repeat: repeat-x;
+	border-bottom: solid 3px #FBBE65;
+		z-index: 101;
+}
+#leftcol {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 185px;
+	/*overflow: visible;*/
+	background-image: url( 'Backgrounds/RSVP_LeftCol_BG.jpg' );
+	background-repeat: repeat-y;
+	padding-left: 20px;
+}
+#leftcolinset {
+	position: static;
+	width: 181px;
+	overflow: visible;
+	padding: 2px;
+	margin-top: 105px;
+}
+#centercol {
+	position: absolute;
+	top: 115px;
+	left: 215px;
+	overflow: visible;
+	width: 570px;
+	/*padding-left:10px;
+	border-left:solid 1px #7B97AD;*/
+}
+#footer 
+{
+    margin-top:30px; margin-bottom:20px;
+}
+#footer div {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 10px;
+	color: #333333;
+	text-align: center;
+}
+#footer #tag {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #003366;
+	text-align: center;
+}
+
+
+/* TEXT FORMATTING TAGS */
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.2em;
+}
+h2 {
+	font-size: 1em;
+}
+h3 {
+	font-size: .8em;
+}
+h4 {
+	font-size: .7em;
+}
+
+/* CLASSES */
+
+.headercell, .headercellbold {
+	background:url(../../Radcontrols/Grid/Skins/Outlook2007/Img/HeaderBg.gif) 0 100% #fff;
+	color: WindowText;
+	text-align: left;
+	border-bottom: solid 1px #6593cf;
+	height: 25px;
+	line-height: 25px;
+	font-size: .8em;
+	padding-left: 5px;
+}
+.headercellbold {
+		font-weight:bold;
+}
+.bodytext {
+	font-size: .8em;
+}
+.formbackground {
+	background-color: #F7F7F7;
+	border: solid 1px #CCCCCC;
+	padding: 5px;
+	font-size: .8em;
+}
+
+a.formyellowbutton 
+{
+    display:block;
+    color:#6C3928;
+    background-image:url( 'Backgrounds/event_hover_orange.jpg' );
+    background-position:top;
+	/*background-color: #F8EEB6;*/
+	text-decoration:none;
+	border: solid 1px #FBBE65;
+	padding: 5px;
+	text-align:center;
+	margin:0 auto;
+}
+a.formyellowbutton:hover 
+{
+    /*background-color:#FBBE65;*/
+    /*background-image:url( 'Backgrounds/event_hover_orange.jpg' );*/
+    background-position:center;
+    text-decoration:underline;
+}
+
+a.leftlink
+{
+    display:block;
+    font-size:.7em;
+    padding:5px 8px 5px 5px;
+    margin:0px 2px 0px -5px;
+    cursor:pointer;
+    border-bottom:solid 1px #90BBCF;
+    color:Black;
+    text-decoration:none;
+    text-align:right;
+}
+a.leftlink img 
+{
+    border:none;
+    overflow:hidden;
+}
+a.leftlink:hover 
+{
+    text-decoration:underline;
+    color:Black;
+}
+
+/* Div Grid */
+.row 
+{
+    clear:both;
+    height:1%;
+    padding:3px;
+}
+.row .left 
+{
+    width:145px;
+    float:left;
+    text-align:right;
+    font-weight:bold;
+    padding:4px;
+    padding-right:6px;
+}
+.row .right 
+{
+    float:left;
+    padding:4px;
+}
+
+
+
+hr 
+{
+    /*margin-top:7px;
+    margin-bottom:7px;
+    border-top:solid 1px #7B97AD;*/
+    height:1px;
+    color:#7B97AD;
+    width:90%;
+    /*overflow:hidden;*/
+}
+
+
+/* Clear:both fix for FF */
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+.clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+.bold, strong
+{
+    font-weight:bold;
+    color:#024478;
+}
+    
+.wordbreak 
+{
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+    overflow:hidden; /* everything else */
+}
+
+
+.dropshadow {
+  /*float:left;
+  background: url(DropShadow/shadowAlpha.png) no-repeat bottom right !important;
+  background: url(DropShadow/shadow.gif) no-repeat bottom right;
+  margin: 10px 0 0 10px !important;
+  margin: 10px 0 0 5px;*/
+  }
+
+.dropshadow img {
+  /*display: block;
+  position: relative;*/
+  background-color: #fff;
+  border: solid 1px #a9a9a9;
+   /*margin: -6px 6px 6px -6px;*/
+  
+  /*padding: 4px;*/
+} 

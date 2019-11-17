@@ -1,0 +1,102 @@
+﻿
+
+
+ul.agenda, ul.agenda ul
+{
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    /*font-size:1em;*/
+}
+ul.agenda ul { margin-bottom:20px; }
+ul.agenda ul ul { margin-bottom:0px; }
+
+
+
+
+/* EVENT DAY */
+div.eventday 
+{
+    background-color:White;
+    border:solid 1px #CCCCCC;
+    font-size:1.2em;
+    padding:4px 4px 4px 4px;
+    height:1%;
+    clear:both;
+}
+div.eventday img
+{
+    width:auto;
+    float:left;
+    padding:0px 4px 0px 0px;
+}
+/* end EVENT DAY */
+
+
+ul.agenda li { list-style-type:none; }
+
+
+/* SESSION */
+ul.agenda li.session {
+    list-style-type:none;
+    font-size:0.95em;
+    margin-left:3em;
+    padding:5px;
+    margin-top:-1px;
+    border-top:solid 1px #CCCCCC;
+    clear:left;
+}
+/* end EVENT SESSION */
+
+
+
+
+/* BREAKOUTS */
+ul.agenda li.breakout 
+{
+    list-style-image: url( 'Images/bullet.gif' );
+    margin-left:5em;
+    padding:3px;
+    padding-left:.5em;
+    font-size:0.95em;
+    text-indent: -1em;
+}
+li.breakout .breakoutdetails
+{
+    padding:5px;
+    text-indent:0;
+    clear:left;
+}
+li.breakout .breakoutdetails img 
+{
+    /*float:left;
+    padding:10px;*/
+}
+/* end BREAKOUTS */
+
+
+
+
+/* BREAKOUT REGISTRATION 
+li.breakout .registertitle
+{
+    padding:3px;
+    text-indent:0px; 
+    background-color:#024478; 
+    font-size:1.2em;
+    color:White;
+}
+li.breakout .registerdetails
+{
+    display:block;    
+    border-left:solid 1px #024478; 
+    border-right:solid 1px #024478;
+}
+li.breakout .registrationbar
+{
+    background-color:#C5D3E0;
+    border:solid 1px #024478; 
+    margin:0 auto;
+    padding:5px;
+    text-align:center;
+}  
+end BREAKOUT REGISTRATION */

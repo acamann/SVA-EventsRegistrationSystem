@@ -1,0 +1,107 @@
+﻿
+
+/* STATUS LIST */
+.statusheader { color:#00448C;border-bottom:solid 2px White; font-size:0.9em; font-weight:bold; margin-top:25px; padding:2px; text-align:right; width:173px; }
+ol.statuslist {   margin:10px 5px 0 0; padding:0 0 10px 0; list-style-position:inside; border-bottom:solid 2px White; }
+ol.statuslist li {   list-style-type:decimal; }
+.status, .selectedstatus { padding:4px 4px 4px 8px; margin:2px 2px 2px 2px; }
+.status { color:#024478; }
+.selectedstatus
+{
+    padding-left:4px;
+    /*padding-top:5px;
+    padding-bottom:5px;*/
+    color:#ffffff;
+    border:none;
+    border-left:solid 4px #FFBA74;
+    /*border-top:solid 1px #FBFDCE;
+    border-bottom:solid 1px #181415;*/
+    background-color:#024478;
+}
+/* end STATUS LIST */
+
+
+/* breakout registration */
+.sessionhead { border-bottom:solid 1px #024478;font-size:0.9em;height:40px;clear:both; }
+.sessionhead .sessionnumber 
+{
+    font-size:2.4em;
+    color:#73502A;
+    font-weight:bold;
+    float:left; 
+    padding-right:4px;
+    background-image: url('Images/orange.gif');
+    width:50px;
+    line-height:50px; 
+    text-align:center;
+}
+.sessionhead .dateandtime { height:30px;margin-top:10px;float:left;width:auto; }
+.sessionhead .status 
+{
+    float:right;
+    width:auto;
+    height:30px;
+    margin-top:10px;
+}
+ul.agendaregister li.breakout 
+{
+    clear:both;
+    height:1%;
+    border-bottom:solid 1px #C5D3E0;
+    padding:3px;
+    font-size:1em; 
+    list-style-type:none;
+}
+ul.agendaregister li.breakout .registration, ul.agendaregister li.breakout .registrationactive
+{
+    float:right;
+    width:100px;
+    padding:5px;
+    text-align:center;
+}
+ul.agendaregister li.breakout .registration 
+{
+    background-color:#C9D7E2;
+    border:solid 1px #7B97AD;
+}
+
+ul.agendaregister li.breakout .registrationactive 
+{
+    background-color:#FCDA74;
+    border:solid 1px #7B97AD;
+}
+/*end BREAKOUT REGISTER */
+
+/* PRICING */
+
+.invoicehead 
+{
+    margin:0 auto;
+}
+
+.invoicehead div, .invoicevalues input 
+{
+    float:left;width:100px;padding:3px;margin:3px;
+}
+.invoicehead div 
+{
+    background-color:#024478;
+    color:White;
+    font-weight:bold;
+    border:solid 1px #024478;
+    text-align:center;
+}
+.invoicevalues input 
+{
+    background-color:#DFE8EF;
+    text-align:right;
+    border:solid 1px #024478;
+}
+.invoicevalues input.total 
+{
+    background-color:#FEEB82;
+    font-weight:bold;
+}
+
+
+/* end PRICING */

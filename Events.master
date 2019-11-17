@@ -1,0 +1,84 @@
+﻿<%@ Master Language="VB" CodeFile="Events.master.vb" Inherits="Events" %>
+
+<%@ Register assembly="RadMenu.Net2" namespace="Telerik.WebControls" tagprefix="radM" %>
+<%@ Register src="App_UserControls/EventsMenu.ascx" tagname="EventsMenu" tagprefix="uc1" %>
+<%@ Register src="App_UserControls/LoginStatus.ascx" tagname="LoginStatus" tagprefix="uc2" %>
+
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SVA Events</title>
+    <link href="App_Themes/Events/Events.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    
+    <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
+    </telerik:RadScriptManager>
+    
+<!-- *** BEGIN WRAPPER *** -->
+<div id="wrapper">
+    <!-- *** BEGIN HEADER *** -->
+    <div id="header">
+        <div id="headerlogo">
+            <div id="headerphoto">
+                <img alt="HeaderPhoto" src="~/App_Themes/Events/Images/RSVP_HeaderPhoto.jpg" 
+                    style="width: 446px; height: 114px" runat="server" /></div>
+            
+        </div>
+    </div>
+    <!-- *** END HEADER *** -->
+    <!-- *** BEGIN MENU *** -->
+    <div id="menu">
+        <uc1:EventsMenu ID="EventsMenu1" runat="server" />
+    <%--<radM:RadMenu ID="rmMenu" runat="server" DataSourceID="smdsRSVP" 
+            Skin="Default2006" Width="540px">
+        </radM:RadMenu>
+        <asp:SiteMapDataSource ID="smdsRSVP" runat="server" ShowStartingNode="False" />--%>
+    </div>
+    <!-- *** END MENU *** -->
+    <!-- *** BEGIN LEFT COLUMN *** -->
+    <div id="leftcol">
+    <div id="leftcolinset">
+    
+        <asp:Panel ID="pnlLogin" runat="server">
+            <%--<div class="formbackground" style="width:163px;">--%>
+
+                <uc2:LoginStatus ID="LoginStatus1" runat="server" />
+
+            <%--</div>
+            <div style="padding:4px;"></div>--%>
+        </asp:Panel>
+        
+        <asp:ContentPlaceHolder ID="cphLeftCol" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    <!-- *** END LEFT COLUMN *** -->
+    <!-- *** BEGIN CENTER COLUMN *** -->
+    <div id="centercol">
+        <asp:ContentPlaceHolder ID="cphCenterCol" runat="server">
+        </asp:ContentPlaceHolder>
+        
+        <div id="footer">
+            <div id="tag">always here. always for you.</div>
+            <div>© Copyright 2005 <a href="http://www.sva.com">SVA Companies</a> - All Rights Reserved</div>
+            <div>1221 John Q. Hammons Drive • Madison, WI 53717</div>
+            <div>Phone: 800.366.9091 or 608.826.2400 • Fax: 608.831.4243 • <a href="mailto:webmaster@sva.com">Webmaster</a> • <a href="http://www.sva.com/about/privacypolicy.aspx">Privacy Policy</a></div>
+        </div>
+    
+    </div>
+    <!-- *** END CENTER COLUMN *** -->
+    
+
+    
+    
+    </div>
+    <!-- *** END WRAPPER *** -->
+    </form>
+    </body>
+</html>

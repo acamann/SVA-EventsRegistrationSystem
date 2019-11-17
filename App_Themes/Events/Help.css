@@ -1,0 +1,24 @@
+﻿.helpdetails img 
+{
+    display:block;
+    padding:4px;
+    margin:16px;
+}
+
+.helpdetails a img 
+{
+    /* if the image is within an anchor (thumbnail) */
+    width:100%;
+    border:solid 2px #7B97AD;
+}
+
+.helpdetails a:hover img 
+{
+    border:solid 2px #F6CE88;
+}
+
+.helpdetails ol li
+{
+    padding:5px;
+    list-style-type:decimal;
+}
